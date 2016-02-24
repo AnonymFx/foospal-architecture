@@ -5,9 +5,10 @@ Players
   Ties
   Games
   ELO/Ranking Points
+  ?Average game time(for timetable)
 
 leader board
-  ranking points (elo? existing systems?)
+  ranking points (ELO? existing systems?)
 
 matchmaking
   randomized (max probability for 1st with last, lowest for first with second)
@@ -15,6 +16,14 @@ matchmaking
 Game Settings
   Number of sets
   Number of points for a set
+  ?Game Times (Continuously, After hour gaming league style (Time Slots distributed over a week or so),...)
+
+Game flow
+  Dynamically add new game rounds (also before the previous one has finished, only one round to be able to add new players dynamically)
+  Dynamically add new players to tournament
+  Dynamically remove players from tournament
+  3 points for winners, 1 ties, 0 losers
+  ? Final rounds
 
 Adding new players:
   Different initial player strength ratings
@@ -24,9 +33,10 @@ Adding new players:
     omar -> best players ELO + 1
 
 non-functional
-  server-client architecture
+  server-client architecture (local AND global server structure, local system: sync with global system when connected to the Internet)
   REST API
   APPs:
-    Server (windows/linux/cross)
-    Client (Windows/linux/Android/iOS/Cross?)
-    Notifications on mobile devices for new game results and promting players to play the next game
+    Server (windows/Linux/Mac/cross)
+    Client (Windows/Linux/Mac/?Android/?iOS/Cross/Web interface)
+    ?Notifications on mobile devices for new game results and prompting players to play the next game
+  Beautiful user interfaces
