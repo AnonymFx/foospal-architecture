@@ -33,10 +33,13 @@ Adding new players:
     omar -> best players ELO + 1
 
 non-functional
-  server-client architecture (local AND global server structure, local system: sync with global system when connected to the Internet)
-  REST API
   APPs:
     Server (windows/Linux/Mac/cross)
     Client (Windows/Linux/Mac/?Android/?iOS/Cross/Web interface)
     ?Notifications on mobile devices for new game results and prompting players to play the next game
   Beautiful user interfaces
+  Architectural requirements:
+    server-client architecture (local AND global server structure, local system: sync with global system when connected to the Internet)
+    REST API
+    Ability to change matchmaking algorithm (dynamically choose algorithm at start time of the tournament) -> Clear interface definition to the matchmaking system
+
