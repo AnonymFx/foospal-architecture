@@ -1,0 +1,1 @@
+# stusta-foosball
