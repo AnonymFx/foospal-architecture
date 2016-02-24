@@ -1,0 +1,32 @@
+Players
+  Names
+  Wins
+  Losses
+  Ties
+  Games
+  ELO/Ranking Points
+
+leader board
+  ranking points (elo? existing systems?)
+
+matchmaking
+  randomized (max probability for 1st with last, lowest for first with second)
+
+Game Settings
+  Number of sets
+  Number of points for a set
+
+Adding new players:
+  Different initial player strength ratings
+    rookie -> 0 ELO
+    pro -> 1/3 of best players ELO
+    elite -> 2/3 of best players ELO
+    omar -> best players ELO + 1
+
+non-functional
+  server-client architecture
+  REST API
+  APPs:
+    Server (windows/linux/cross)
+    Client (Windows/linux/Android/iOS/Cross?)
+    Notifications on mobile devices for new game results and promting players to play the next game
