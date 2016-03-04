@@ -11,14 +11,16 @@ leader board
   ranking points (ELO? existing systems?)
 
 matchmaking
-  randomized (max probability for 1st with last, lowest for first with second)
+  diffent systems chosen at the beginning (MonsterDYP 2.0 & Standard Stusta)
+  adjustable depth of k.o. rounds after the group phase
 
 Game Settings
   Number of sets
   Number of points for a set
   ?Game Times (Continuously, After hour gaming league style (Time Slots distributed over a week or so),...)
 
-Game flow
+MonsterDYP 2.0
+  randomized (max probability for 1st with last, lowest for first with second)
   Dynamically add new game rounds (also before the previous one has finished, only one round to be able to add new players dynamically)
   Dynamically add new players to tournament
   Dynamically remove players from tournament
