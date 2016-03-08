@@ -1,0 +1,24 @@
+{
+  "generator-jhipster": {
+    "baseName": "KickerApp",
+    "packageName": "de.stustafoosball",
+    "packageFolder": "de/stustafoosball",
+    "authenticationType": "session",
+    "hibernateCache": "ehcache",
+    "clusteredHttpSession": "no",
+    "websocket": "no",
+    "databaseType": "sql",
+    "devDatabaseType": "h2Memory",
+    "prodDatabaseType": "mysql",
+    "searchEngine": "elasticsearch",
+    "useSass": false,
+    "buildTool": "gradle",
+    "frontendBuilder": "grunt",
+    "enableTranslation": false,
+    "enableSocialSignIn": false,
+    "rememberMeKey": "430174b1ea09d27103aad71e35a3c14dd7113fb2",
+    "testFrameworks": [
+      "gatling"
+    ]
+  }
+}
