@@ -1,8 +1,12 @@
+# --- KickerApp Documentation
+## How to test the web application (Windows)
+1. (optional) Import build.gradle in IntelliJ
+2. Run gradlew.bat
+3. Once started, application is ready at 127.0.0.1:8080/#
 
+# --- Official JHipster Documentation ---
 
----------- Official 
-
-# KickerApp
+## KickerApp
 
 This application was generated using JHipster, you can find documentation and help at [https://jhipster.github.io](https://jhipster.github.io).
 
@@ -30,7 +34,7 @@ Bower is used to manage CSS and JavaScript dependencies used in this application
 specifying a newer version in `bower.json`. You can also run `bower update` and `bower install` to manage dependencies.
 Add the `-h` flag on any command to see how you can use it. For example, `bower update -h`.
 
-# Building for production
+## Building for production
 
 To optimize the KickerApp client for production, run:
 
@@ -45,7 +49,7 @@ To ensure everything worked, run:
 
 Then navigate to [http://localhost:8080](http://localhost:8080) in your browser.
 
-# Testing
+## Testing
 
 Unit tests are run by [Karma][] and written with [Jasmine][]. They're located in `src/test/javascript` and can be run with:
 
@@ -53,7 +57,7 @@ Unit tests are run by [Karma][] and written with [Jasmine][]. They're located in
 
 
 
-# Continuous Integration
+## Continuous Integration
 
 To setup this project in Jenkins, use the following configuration:
 
