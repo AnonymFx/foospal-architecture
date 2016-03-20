@@ -1,0 +1,78 @@
+
+<div>
+    <h2><span>Game</span> {{game.id}}</h2>
+    <div class="table-responsive">
+        <table class="table table-striped">
+            <thead>
+            <tr>
+                <th>Field</th>
+                <th>Value</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>
+                    <span>Team1_score</span>
+                </td>
+                <td>
+                    <span class="form-control-static">{{game.team1_score}}</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span>Team2_score</span>
+                </td>
+                <td>
+                    <span class="form-control-static">{{game.team2_score}}</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span>Duration</span>
+                </td>
+                <td>
+                    <span class="form-control-static">{{game.duration}}</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span>team1_player1</span>
+                </td>
+                <td>
+                    <a class="form-control-static" ui-sref="player.detail({id:game.team1_player1.id})">{{game.team1_player1.name}}</a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span>team1_player2</span>
+                </td>
+                <td>
+                    <a class="form-control-static" ui-sref="player.detail({id:game.team1_player2.id})">{{game.team1_player2.name}}</a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span>team2_player1</span>
+                </td>
+                <td>
+                    <a class="form-control-static" ui-sref="player.detail({id:game.team2_player1.id})">{{game.team2_player1.name}}</a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span>team2_player2</span>
+                </td>
+                <td>
+                    <a class="form-control-static" ui-sref="player.detail({id:game.team2_player2.id})">{{game.team2_player2.name}}</a>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <button type="submit"
+            onclick="window.history.back()"
+            class="btn btn-info">
+        <span class="glyphicon glyphicon-arrow-left"></span>&nbsp;<span> Back</span>
+    </button>
+</div>

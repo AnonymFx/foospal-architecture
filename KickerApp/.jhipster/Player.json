@@ -1,0 +1,80 @@
+{
+    "relationships": [
+        {
+            "relationshipId": 1,
+            "relationshipName": "account",
+            "otherEntityName": "user",
+            "relationshipType": "many-to-one",
+            "otherEntityField": "login"
+        },
+        {
+            "relationshipId": 2,
+            "relationshipName": "games_as_team1_player1",
+            "otherEntityName": "game",
+            "relationshipType": "one-to-many",
+            "otherEntityField": "id",
+            "otherEntityRelationshipName": "team1_player1"
+        },
+        {
+            "relationshipId": 3,
+            "relationshipName": "games_as_team1_player2",
+            "otherEntityName": "game",
+            "relationshipType": "one-to-many",
+            "otherEntityField": "id",
+            "otherEntityRelationshipName": "team1_player2"
+        },
+        {
+            "relationshipId": 4,
+            "relationshipName": "games_as_team2_player1",
+            "otherEntityName": "game",
+            "relationshipType": "one-to-many",
+            "otherEntityField": "id",
+            "otherEntityRelationshipName": "team2_player1"
+        },
+        {
+            "relationshipId": 5,
+            "relationshipName": "games_as_team2_player2",
+            "otherEntityName": "game",
+            "relationshipType": "one-to-many",
+            "otherEntityField": "id",
+            "otherEntityRelationshipName": "team2_player2"
+        }
+    ],
+    "fields": [
+        {
+            "fieldId": 1,
+            "fieldName": "name",
+            "fieldType": "String",
+            "fieldValidateRules": []
+        },
+        {
+            "fieldId": 2,
+            "fieldName": "wins",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldId": 3,
+            "fieldName": "losses",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldId": 4,
+            "fieldName": "ties",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldId": 5,
+            "fieldName": "mmr",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldId": 6,
+            "fieldName": "avg_duration",
+            "fieldType": "Float"
+        }
+    ],
+    "changelogDate": "20160319223408",
+    "dto": "no",
+    "service": "no",
+    "pagination": "no"
+}

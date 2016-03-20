@@ -1,0 +1,55 @@
+{
+    "relationships": [
+        {
+            "relationshipId": 1,
+            "relationshipName": "team1_player1",
+            "otherEntityName": "player",
+            "relationshipType": "many-to-one",
+            "otherEntityField": "name"
+        },
+        {
+            "relationshipId": 2,
+            "relationshipName": "team1_player2",
+            "otherEntityName": "player",
+            "relationshipType": "many-to-one",
+            "otherEntityField": "name"
+        },
+        {
+            "relationshipId": 3,
+            "relationshipName": "team2_player1",
+            "otherEntityName": "player",
+            "relationshipType": "many-to-one",
+            "otherEntityField": "name"
+        },
+        {
+            "relationshipId": 4,
+            "relationshipName": "team2_player2",
+            "otherEntityName": "player",
+            "relationshipType": "many-to-one",
+            "otherEntityField": "name"
+        }
+    ],
+    "fields": [
+        {
+            "fieldId": 1,
+            "fieldName": "team1_score",
+            "fieldType": "Integer",
+            "fieldValidateRules": []
+        },
+        {
+            "fieldId": 2,
+            "fieldName": "team2_score",
+            "fieldType": "Integer",
+            "fieldValidateRules": []
+        },
+        {
+            "fieldId": 3,
+            "fieldName": "duration",
+            "fieldType": "Float"
+        }
+    ],
+    "changelogDate": "20160320164005",
+    "dto": "no",
+    "service": "no",
+    "pagination": "pagination"
+}

@@ -1,0 +1,91 @@
+<div>
+    <h2>Games</h2>
+    <jh-alert></jh-alert>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xs-4 no-padding-left">
+                <button class="btn btn-primary" ui-sref="game.new" >
+                    <span class="glyphicon glyphicon-plus"></span>
+                    <span
+class="hidden-xs"                       >Create new Game
+                    </span>
+                </button>
+            </div>
+            <div class="col-xs-8 no-padding-right">
+                <form name="searchForm" class="form-inline">
+                    <div class="input-group pull-right" >
+                        <input type="text" class="form-control" ng-model="searchQuery" id="searchQuery" placeholder="{{ 'kickerappApp.game.home.search' }}">
+                        <span  class="input-group-btn width-min" >
+                            <button class="btn btn-info" ng-click="search()">
+                                <span class="glyphicon glyphicon-search"></span>
+                            </button>
+                        </span>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <br/>
+    <div class="table-responsive">
+        <table class="jh-table table table-striped">
+            <thead>
+                <tr jh-sort="predicate" ascending="reverse" callback="loadAll()">
+                    <th jh-sort-by="id"><span>ID</span> <span class="glyphicon glyphicon-sort"></span></th>
+                    <th jh-sort-by="team1_score"><span>Team1_score</span> <span class="glyphicon glyphicon-sort"></span></th>
+                    <th jh-sort-by="team2_score"><span>Team2_score</span> <span class="glyphicon glyphicon-sort"></span></th>
+                    <th jh-sort-by="duration"><span>Duration</span> <span class="glyphicon glyphicon-sort"></span></th>
+                    <th jh-sort-by="team1_player1.name"><span>team1_player1</span> <span class="glyphicon glyphicon-sort"></span></th>
+                    <th jh-sort-by="team1_player2.name"><span>team1_player2</span> <span class="glyphicon glyphicon-sort"></span></th>
+                    <th jh-sort-by="team2_player1.name"><span>team2_player1</span> <span class="glyphicon glyphicon-sort"></span></th>
+                    <th jh-sort-by="team2_player2.name"><span>team2_player2</span> <span class="glyphicon glyphicon-sort"></span></th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="game in games track by game.id">
+                    <td><a ui-sref="game.detail({id:game.id})">{{game.id}}</a></td>
+                    <td>{{game.team1_score}}</td>
+                    <td>{{game.team2_score}}</td>
+                    <td>{{game.duration}}</td>
+                    <td>
+                        <a ui-sref="player.detail({id:game.team1_player1.id})">{{game.team1_player1.name}}</a>
+                    </td>
+                    <td>
+                        <a ui-sref="player.detail({id:game.team1_player2.id})">{{game.team1_player2.name}}</a>
+                    </td>
+                    <td>
+                        <a ui-sref="player.detail({id:game.team2_player1.id})">{{game.team2_player1.name}}</a>
+                    </td>
+                    <td>
+                        <a ui-sref="player.detail({id:game.team2_player2.id})">{{game.team2_player2.name}}</a>
+                    </td>
+                    <td class="text-right">
+                        <div class="btn-group flex-btn-group-container">
+                            <button type="submit"
+                                    ui-sref="game.detail({id:game.id})"
+                                    class="btn btn-info btn-sm">
+                                <span class="glyphicon glyphicon-eye-open"></span>
+                                <span class="hidden-xs hidden-sm"></span>
+                            </button>
+                            <button type="submit"
+                                    ui-sref="game.edit({id:game.id})"
+                                    class="btn btn-primary btn-sm">
+                                <span class="glyphicon glyphicon-pencil"></span>
+                                <span class="hidden-xs hidden-sm"></span>
+                            </button>
+                            <button type="submit"
+                                    ui-sref="game.delete({id:game.id})"
+                                    class="btn btn-danger btn-sm">
+                                <span class="glyphicon glyphicon-remove-circle"></span>
+                                <span class="hidden-xs hidden-sm"></span>
+                            </button>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="text-center">
+        <uib-pagination class="pagination-sm" total-items="totalItems" ng-model="page" ng-change="loadAll()"></uib-pagination>
+    </div>
+</div>
