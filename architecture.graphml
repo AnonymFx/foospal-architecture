@@ -39,7 +39,6 @@ getMatches(): List&lt;Match&gt;
 getTournamentSettings(): TS
 newMatch(): Match
 removeMatch(Match): void
-save(): void
 nextPhase(): boolean
 </y:MethodLabel>
           </y:UML>
