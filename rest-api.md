@@ -23,16 +23,16 @@ Body:
 
 ## Tournament
 
-### PUT /api/tournaments/{id}/nextPhase
+### POST /api/tournaments/{id}/nextPhase
 
-### PUT /api/tournaments/{id}/match/new -> matchid
+### POST /api/tournaments/{id}/match/new -> matchid
 
-### PUT /api/tournaments/new -> tournamentid
+### POST /api/tournaments/new -> tournamentid
 Body:
 1. Settings for the tournament like tournament type, etc. (c.f. TournamentSettings in architecture diagram)
 2. Initial player list
 
-### PUT /api/tournaments/{id}/player/add
+### POST /api/tournaments/{id}/player/add
 Body: PlayerId
 
 ### GET /api/tournaments/page{index}  
@@ -59,7 +59,7 @@ Get latest tournament
 ### GET /api/players/page{index}
 Get index\*20 til (index+1)\*20-1
 
-### PUT /api/players/add -> {id}
+### POST /api/players/add -> {id}
 
 ### DELETE /api/players/{id}
 
