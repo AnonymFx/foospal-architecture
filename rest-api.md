@@ -7,13 +7,13 @@
 
 ## Game
 
-### PUT /api/game/{id}
+### PUT /api/games/{id}
 May not change already existing game score
 Body:
 1. Score of team 1
 2. Score of team 2
 
-### POST /api/game/{id}
+### POST /api/games/{id}
 May change already existing game score
 Body:
 1. Score of team 1
@@ -23,44 +23,44 @@ Body:
 
 ## Tournament
 
-### PUT /api/tournament/{id}/nextPhase
+### PUT /api/tournaments/{id}/nextPhase
 
-### PUT /api/tournament/{id}/match/new -> matchid
+### PUT /api/tournaments/{id}/match/new -> matchid
 
-### PUT /api/tournament/new -> tournamentid
-Body: 
+### PUT /api/tournaments/new -> tournamentid
+Body:
 1. Settings for the tournament like tournament type, etc. (c.f. TournamentSettings in architecture diagram)
 2. Initial player list
 
-### PUT /api/tournament/{id}/player/add 
+### PUT /api/tournaments/{id}/player/add
 Body: PlayerId
 
-### GET /api/tournaments/{index}  
-Get index*20 til (index+1)*20-1
+### GET /api/tournaments/page{index}  
+Get index\*20 til (index+1)\*20-1
 
-### GET /api/tournament/{id}  
+### GET /api/tournaments/{id}  
 Get tournament with {id} {id}
 
-### GET /api/tournament/latest
+### GET /api/tournaments/latest
 Get latest tournament
 
 [//]: # (---------------------------------------------------------------------------)
 
 ## Match
 
-### DELETE /api/match/{id}
+### DELETE /api/matches/{id}
 
-### GET /api/match/{id}
+### GET /api/matches/{id}
 
 [//]: # (---------------------------------------------------------------------------)
 
 ## Payer
 
-### GET /api/players/{index}
-Get index*20 til (index+1)*20-1
+### GET /api/players/page{index}
+Get index\*20 til (index+1)\*20-1
 
-### PUT /api/player/add -> {id}
+### PUT /api/players/add -> {id}
 
-### DELETE /api/player/{id}
+### DELETE /api/players/{id}
 
-### GET /api/player/{id}
+### GET /api/players/{id}
