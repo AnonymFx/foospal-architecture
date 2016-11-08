@@ -35,7 +35,7 @@ Body:
 ### POST /api/tournaments/{id}/player/add
 Body: PlayerId
 
-### GET /api/tournaments/page{index}  
+### GET /api/tournaments/page/{index}  
 Get index\*20 til (index+1)\*20-1
 
 ### GET /api/tournaments/{id}  
@@ -56,7 +56,7 @@ Get latest tournament
 
 ## Payer
 
-### GET /api/players/page{index}
+### GET /api/players/page/{index}
 Get index\*20 til (index+1)\*20-1
 
 ### POST /api/players/add -> {id}
